@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.js.map
+*.d.ts
+!src/**/*.d.ts
+.env
+.env.local
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+/versions/v1.0.0/*.zip
+/1-revolt-plugin/RevoltUnrealPlugin v2.3.7.zip
+/1-revolt-plugin/RevoltUnrealPlugin v2.3.7
