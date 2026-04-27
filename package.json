@@ -1,0 +1,53 @@
+{
+  "name": "ue-conduit",
+  "version": "1.0.0",
+  "description": "UE Conduit with Claude — The conduit between AI and engine. MCP server giving Claude direct control over Unreal Engine 5.",
+  "author": "Jag Journey, LLC",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ue-conduit": "./dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/mcp-server/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "lint": "eslint src/",
+    "setup": "node scripts/setup-claude-config.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@google/generative-ai": "^0.21.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "openai": "^4.104.0",
+    "ws": "^8.18.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "unreal-engine",
+    "ue5",
+    "mcp",
+    "claude",
+    "ai",
+    "game-development",
+    "automation",
+    "ue-conduit",
+    "conduit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jagjourney/ue-conduit"
+  }
+}
